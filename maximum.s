@@ -10,8 +10,9 @@
 
 .section .data
 
-data_items:
+data_items:  # label to refer to start of the items
 .long 3, 67, 34, 222, 45, 89, 91, 22, 10, 8, 42, 0
+# .long takes 4 bytes of memory for each element, 48 bytes
 
 .section .text
 
@@ -23,7 +24,7 @@ movl %eax, %ebx  # since this is the first item, %eax is the biggest
 
 start_loop:
 cmpl $0, %eax  # check to see if we've hit the end
-je loop_exit
+je loop_exit  # jump if equal
 
 incl %edi  # load next value
 movl data_items(, %edi, 4), %eax
@@ -38,4 +39,4 @@ loop_exit:
 # %ebx is the status code for the exit system call
 # and it already has the maximum nuber
 movl $1, %eax  # 1 is the exit() syscall
-int $0x80
+int $0x80  # trigger the kernel
