@@ -1,3 +1,5 @@
+# just exits returning 0
+
 .section .data
 
 .section .text
