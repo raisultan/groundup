@@ -40,15 +40,15 @@ movl 8(%ebp), %eax  # this moves the first argument to %eax
 
 cmpl $1, %eax  # if the number is 1, that is our base case,
                # and we simply return (1 is already in %eax as the return value)
-
 je end_factorial
+
 decl %eax  # otherwise, decrease the value
 pushl %eax  # push it for our call to factorial
 call factorial  # call factorial
 movl 8(%ebp), %ebx  # %eax has the return value, so we
                     # reload our parameter into %ebx
 
-imull %ebx, %eax  # multiply that by the resul of the last call to factorial (in %eax)
+imull %ebx, %eax  # multiply that by the result of the last call to factorial (in %eax)
                   # the answer is stored in %eax, which is good since that's where return values go
 
 end_factorial:
