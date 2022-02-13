@@ -12,5 +12,5 @@ $ echo $?
 ```
 
 # TODOs
-[ ] square func
-[ ] non-recursive factorial func
+[] square func
+[] non-recursive factorial func
