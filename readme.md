@@ -10,3 +10,7 @@ $ ld -m elf_i386 output.o -o executable
 $ ./executable
 $ echo $?
 ```
+
+# TODOs
+[ ] square func
+[ ] non-recursive factorial func
