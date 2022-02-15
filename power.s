@@ -3,8 +3,6 @@
 # Everything in the main program is stored in registers,
 # so the data section doesn't have anything
 
-# note: this is 64-bit mode, for that we use pushl and popl
-#       in 32-bit mode would use pushl and popl
 .section .data
 
 .section .text
