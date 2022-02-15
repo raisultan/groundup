@@ -12,5 +12,4 @@ $ echo $?
 ```
 
 # TODOs
-- [ ] square func
 - [ ] non-recursive factorial func
