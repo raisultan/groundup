@@ -6,3 +6,6 @@ power
 factorial
 square
 factorial_non_rec
+ex.lowercase
+ex.uppercase
+file_to_upper
