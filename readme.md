@@ -10,3 +10,6 @@ $ ld -m elf_i386 output.o -o executable
 $ ./executable
 $ echo $?
 ```
+
+on:
+- chapter 6
