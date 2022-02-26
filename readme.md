@@ -10,7 +10,3 @@ $ ld -m elf_i386 output.o -o executable
 $ ./executable
 $ echo $?
 ```
-
-Todo:
-- [ ] answer to "Know the Concepts" section
-- [ ] finish tasks in "Use the Concepts" section
